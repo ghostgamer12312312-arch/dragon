@@ -8,13 +8,13 @@ from __future__ import annotations
 # -----------------------------------------------------------
 
 STARTING_RESOURCES = {
-    "yens": 500,
-    "gems": 20,
-    "crystals": 5,
-    "tickets": 3,
-    "skill_points": 2,
-    "keys_elite": 1,
-    "keys_boss": 0,
+    "yens": 500000,
+    "gems": 20000,
+    "crystals": 5555,
+    "tickets": 130,
+    "skill_points": 120,
+    "keys_elite": 10,
+    "keys_boss": 10,
     "exp": 0,
 }
 
@@ -55,10 +55,10 @@ BOSS = {
     "hp": 1800,
     "dmg": 60,
     "yens": 9000,
-    "gems": 90,
-    "crystals": 10,
+    "gems": 900,
+    "crystals": 60,
     "tickets": 5,
-    "skill_points": 10,
+    "skill_points": 20,
 }
 
 # -----------------------------------------------------------
@@ -135,21 +135,21 @@ RARITY_ORDER = {
 }
 
 RARITY_ATK = {
-    "common": 18,
-    "rare": 32,
-    "epic": 58,
-    "legendary": 90,
-    "mythical": 140,
-    "omni": 220,
+    "common": 100,
+    "rare": 135,
+    "epic": 163,
+    "legendary": 199,
+    "mythical": 255,
+    "omni": 342,
 }
 
 RARITY_HP = {
-    "common": 40,
-    "rare": 80,
-    "epic": 130,
-    "legendary": 210,
-    "mythical": 330,
-    "omni": 500,
+    "common": 150,
+    "rare": 250,
+    "epic": 321,
+    "legendary": 431,
+    "mythical": 555,
+    "omni": 780,
 }
 
 GACHA_RATES = [
@@ -181,28 +181,28 @@ WEAPONS = {
 }
 
 EQUIPMENT = {
-    "Wooden Sword": ("weapon", 8),
-    "Iron Sword": ("weapon", 12),
-    "Saiyan Blade": ("weapon", 25),
-    "Kamehameha Blade": ("weapon", 42),
-    "Ultra Sword": ("weapon", 60),
-    "God Breaker": ("weapon", 80),
-    "Destructo Blade": ("weapon", 100),
-    "Black Hole Blade": ("weapon", 120),
-    "Galaxy Cutter": ("weapon", 150),
-    "Crusher Edge": ("weapon", 185),
-    "Supernova Blade": ("weapon", 220),
-    "Deadly Divine Sword": ("weapon", 260),
-    "Leather Vest": ("armor", 14),
-    "Steel Armor": ("armor", 26),
-    "Saiyan Armor": ("armor", 44),
-    "God Armor": ("armor", 70),
-    "Battle Armor": ("armor", 92),
-    "Celestial Armor": ("armor", 120),
-    "Doom Armor": ("armor", 150),
-    "Ultra Guard": ("armor", 180),
-    "Katchin Armor": ("armor", 220),
-    "Mystic Guard": ("armor", 260),
+    "Wooden Sword": ("weapon", 108),
+    "Iron Sword": ("weapon", 112),
+    "Saiyan Blade": ("weapon", 125),
+    "Kamehameha Blade": ("weapon", 412),
+    "Ultra Sword": ("weapon", 160),
+    "God Breaker": ("weapon", 180),
+    "Destructo Blade": ("weapon", 221),
+    "Black Hole Blade": ("weapon", 220),
+    "Galaxy Cutter": ("weapon", 250),
+    "Crusher Edge": ("weapon", 285),
+    "Supernova Blade": ("wweapon, 320),
+    "Deadly Divine Sword": ("weapon", 360),
+    "Leather Vest": ("armor", 114),
+    "Steel Armor": ("armor", 126),
+    "Saiyan Armor": ("armor", 144),
+    "God Armor": ("armor", 170),
+    "Battle Armor": ("armor", 192),
+    "Celestial Armor": ("armor", 220),
+    "Doom Armor": ("armor", 250),
+    "Ultra Guard": ("armor", 280),
+    "Katchin Armor": ("armor", 320),
+    "Mystic Guard": ("armor", 360),
     "Grand Priest Suit": ("armor", 320),
     "Divine Battle Suit": ("armor", 380),
     "Heavenly Guardian Suit": ("armor", 430),
@@ -257,7 +257,7 @@ SHOP = {
 # -----------------------------------------------------------
 
 SKILLS = {
-    "Ki Blast": 3,
+    "Ki Blast": 9,
     "Kaioken": 6,
     "Instant Transmission": 10,
     "Spirit Bomb": 18,
@@ -280,26 +280,26 @@ SKILLS = {
 }
 
 SKILL_ATK = {
-    "Ki Blast": 3,
-    "Kaioken": 6,
-    "Instant Transmission": 4,
-    "Spirit Bomb": 12,
-    "Solar Flare": 7,
-    "Destructo Disk": 9,
-    "Ultra Instinct": 15,
-    "Final Flash": 18,
-    "God Kamehameha": 22,
-    "Big Bang Attack": 14,
-    "Black Hole Attack": 24,
-    "Time Skip": 12,
-    "Nova Burst": 20,
-    "Dragon Fist": 18,
-    "Final Explosion": 22,
-    "Kamehameha Wave": 25,
-    "Heavenly Rush": 30,
-    "Universe Breaker": 34,
-    "Halo Blast": 38,
-    "Godly Burst": 45,
+    "Ki Blast": 100,
+    "Kaioken": 116,
+    "Instant Transmission": 114,
+    "Spirit Bomb": 192,
+    "Solar Flare": 171,
+    "Destructo Disk": 190,
+    "Ultra Instinct": 215,
+    "Final Flash": 128,
+    "God Kamehameha": 222,
+    "Big Bang Attack": 214,
+    "Black Hole Attack": 224,
+    "Time Skip": 132,
+    "Nova Burst": 220,
+    "Dragon Fist": 198,
+    "Final Explosion": 292,
+    "Kamehameha Wave": 225,
+    "Heavenly Rush": 390,
+    "Universe Breaker": 344,
+    "Halo Blast": 368,
+    "Godly Burst": 465,
 }
 
 # -----------------------------------------------------------
@@ -313,9 +313,9 @@ DRAGON_BALL_STARS = range(1, 8)
 # -----------------------------------------------------------
 
 SUMMONS = {
-    "elite": ("Elite Ginyu Force", 2600, 110, 3, "keys_elite"),
-    "mythical": ("Mythical Perfect Cell", 7000, 180, 6, "keys_boss"),
-    "legendary": ("God of Destruction", 11000, 260, 10, "keys_boss"),
+    "elite": ("Elite Ginyu Force", 260000, 11000, 3000, "keys_elite"),
+    "mythical": ("Mythical Perfect Cell", 700000, 18000, 1116, "keys_boss"),
+    "legendary": ("God of Destruction", 1100000, 2600, 1000, "keys_boss"),
 }
 
 # -----------------------------------------------------------
@@ -325,39 +325,39 @@ SUMMONS = {
 CLAN_RAIDS = {
     "Perfect Cell": {
         "hp": 40000,
-        "dmg": 800,
-        "reward_yens": 250000,
-        "reward_gems": 500,
-        "reward_crystals": 30,
-        "reward_tickets": 12,
-        "reward_skill_points": 30,
+        "dmg": 399,
+        "reward_yens": 25000000,
+        "reward_gems": 50000,
+        "reward_crystals": 3000,
+        "reward_tickets": 50,
+        "reward_skill_points": 100,
     },
     "Frieza": {
         "hp": 70000,
         "dmg": 1200,
-        "reward_yens": 500000,
-        "reward_gems": 900,
-        "reward_crystals": 60,
-        "reward_tickets": 20,
-        "reward_skill_points": 50,
+        "reward_yens": 500000000,
+        "reward_gems": 90000,
+        "reward_crystals": 6000,
+        "reward_tickets": 70,
+        "reward_skill_points": 120,
     },
     "Majin Buu": {
         "hp": 95000,
         "dmg": 1700,
-        "reward_yens": 800000,
-        "reward_gems": 1200,
-        "reward_crystals": 80,
-        "reward_tickets": 28,
-        "reward_skill_points": 70,
+        "reward_yens": 80000000,
+        "reward_gems": 120000,
+        "reward_crystals": 8000,
+        "reward_tickets": 100,
+        "reward_skill_points": 150,
     },
     "Beerus": {
         "hp": 140000,
         "dmg": 2400,
-        "reward_yens": 1200000,
-        "reward_gems": 1800,
-        "reward_crystals": 100,
-        "reward_tickets": 35,
-        "reward_skill_points": 90,
+        "reward_yens": 120000000,
+        "reward_gems": 180000,
+        "reward_crystals": 10000,
+        "reward_tickets": 150,
+        "reward_skill_points": 190,
     },
 }
 
@@ -368,7 +368,7 @@ CLAN_RAIDS = {
 RAID = {
     "hp": 120000,
     "dmg": 500,
-    "reward_mult": 10,
+    "reward_mult": 1000,
     "attack_cooldown_s": 0,
 }
 
